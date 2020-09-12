@@ -15,14 +15,18 @@
             arjs="sourceType: webcam; debugUIEnabled: false;"
         >
                 <a-curvedimage
-                    src="assets/myFace.jpeg"
-                    scale="10 10 10"
-                    gps-entity-place="latitude: 52.632469; longitude: -1.134817;"
-                    radius="5.7" 
-                    theta-length="72"
-                    height = "6"
-                    rotation="0 30 0"
-                ></a-curvedimage>
+                src="assets/myFace.jpeg"
+                scale="10 10 10"
+                gps-entity-place="latitude: 52.632469; longitude: -1.134817;"
+                radius="5.7" 
+                theta-length="72"
+                height = "6"
+                rotation="0 30 0"></a-curvedimage>
+
+                <a-sound 
+                src="assets/rainSounds.mp3" 
+                autoplay="true"
+                position="0 2 5"></a-sound>
 
             <a-camera gps-camera rotation-reader></a-camera>
         </a-scene>
