@@ -12,8 +12,14 @@
 
 <body style="margin: 0; overflow: hidden;">
     <a-scene vr-mode-ui="enabled: false" embedded arjs="sourceType: webcam; debugUIEnabled: false;">
-        <a-text value="Help I'm trapped inside your phone!!!!!!" material="color: blue" look-at="[gps-camera]" scale="120 120 120" gps-entity-place="latitude: 52.971664; longitude: -1.236555;"></a-text>
-        <a-camera gps-camera rotation-reader> </a-camera>
+        <a-text 
+        value="Help I'm trapped in your phone!" 
+
+        scale="40 40 40"
+        geometry="primitive: box; width: 5; height: 1; depth: 0.2"
+        material="color: blue"
+        gps-entity-place="latitude: 52.635071; longitude: -1.127654;"></a-text>
+        <a-camera gps-camera = "maxDistance: 100;" rotation-reader> </a-camera>
     </a-scene>
 </body>
 
