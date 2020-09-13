@@ -34,10 +34,21 @@
             arc="360" 
             p="2" 
             q="7" 
-            scale="20 20 20"
+            scale="1 1 1"
             radius="10" 
             radius-tubular="0.3"
-            gps-entity-place="latitude:52.62447 ; longitude: -1.11861"></a-torus-knot>
+            gps-entity-place="latitude:52.62447; longitude: -1.11861"></a-torus-knot>
+
+            <a-ring 
+            scale = "100 100 100"
+            color="teal" 
+            radius-inner="1" 
+            radius-outer="2" 
+            gps-entity-place="latitude:52.62445; longitude: -1.11846"></a-torus-knot>></a-ring>
+
+            <a-gltf-model 
+            src="scene.gltf"
+            gps-entity-place="latitude: 52.632479; longitude: -1.134784"></a-gltf-model>
 
 
             <a-camera gps-camera = "maxDistance: 10000; " rotation-reader></a-camera>
