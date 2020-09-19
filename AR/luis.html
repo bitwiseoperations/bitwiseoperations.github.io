@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Silver Street AR Scene</title>
+    <title>GeoAR.js demo</title>
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
@@ -15,44 +15,27 @@
     vr-mode-ui="enabled: false" 
     embedded arjs="sourceType: webcam; debugUIEnabled: false;">
 
-        
-        <a-text 
-        value="Hello Luis!!!"
-        look-at="[gps-camera]" 
-        rotation="0 145 0"
-        scale="1 1 1"
-        geometry="primitive: box; width: 5; height: 1; depth: 0.2"
-        material="color: blue" 
-        gps-entity-place="latitude: 52.635522; longitude: -1.134860;"></a-text>
 
 
-        <a-curvedimage
+        <a-image
         src="assets/myFace.jpeg"
-        scale="10 10 10"
-        gps-entity-place="latitude: 52.635528; longitude: -1.134780;"
-        radius="5.7" 
-        theta-length="72"
-        height = "6"
-        rotation="0 30 0"></a-curvedimage>
-
-        <a-sound 
-        src="assets/rainSounds.mp3" 
-        autoplay="true" 
-        position="0 2 5"
-        gps-entity-place="latitude: 52.635522; longitude: -1.134860;"></a-sound>
-
-        <a-sound 
-        src="assets/gooseSounds.mp3" 
-        autoplay="true" 
-        position="0 2 5"
-        gps-entity-place="latitude: 52.635528; longitude: -1.134780;"
+        scale="11 11 11"
+        height = "3"
+        rotation="0 30 0"
+        gps-entity-place="latitude: 52.635071; longitude: -1.127654;"></a-image>
 
 
+        <a-torus-knot 
+        color="#B84A39" 
+        arc="360" 
+        p="2" 
+        q="7" 
+        scale="1 1 1"
+        radius="10" 
+        radius-tubular="0.3"
+        gps-entity-place="latitude: 52.635071; longitude: -1.127654;"></a-torus-knot>
 
-
-
-
-        <a-camera gps-camera = "maxDistance: 25;" rotation-reader> </a-camera>
+        <a-camera gps-camera = "maxDistance: 10000;" rotation-reader> </a-camera>
     </a-scene>
 </body>
 
