@@ -9,11 +9,7 @@
     </head>
 
     <body style="margin: 0; overflow: hidden;">
-        <a-scene
-            embedded
-            loading-screen="enabled: false;"
-            arjs="sourceType: webcam; debugUIEnabled: false;"
-        >
+        <a-scene embedded loading-screen="enabled: false;" arjs="sourceType: webcam; debugUIEnabled: false;">
             <a-image
             src="assets/myFace.jpeg"
             scale="10 10 10"
@@ -27,7 +23,7 @@
             arc="360" 
             radius="10" 
             radius-tubular="0.3"
-            gps-entity-place="latitude: 52.6245; longitude: -1.11874;"></a-torus>
+            gps-entity-place="latitude: 52.624422; longitude: -1.118422;"></a-torus>
 
             <a-torus-knot 
             color="#B84A39" 
@@ -36,17 +32,25 @@
             q="7" 
             scale="1 1 1"
             radius="10" 
-            radius-tubular="0.3"
-            gps-entity-place="latitude:52.62447; longitude: -1.11861"></a-torus-knot>
+            radius-tubular="0.3" 
+            gps-entity-place="latitude: 52.624303; longitude: -1.118038"></a-torus-knot>
 
             <a-ring 
             scale = "1 1 1"
             color="red" 
             radius-inner="5" 
             radius-outer="10" 
-            gps-entity-place="latitude:52.62445; longitude: -1.11846"></a-ring>
+            gps-entity-place="latitude: 52.624194; longitude: -1.118599"></a-ring>
 
-            <a-camera gps-camera = "maxDistance: 10; " rotation-reader></a-camera>
+            <a-text 
+            value="Hello Luis!" 
+            rotation="0 145 0"
+            scale="1 1 1"
+            geometry="primitive: box; width: 5; height: 1; depth: 0.2"
+            material="color: blue"
+            gps-entity-place="latitude: 52.624305; longitude: -1.118985;"></a-text>
+
+            <a-camera gps-camera = "maxDistance: 10000; " rotation-reader></a-camera>
         </a-scene>
     </body>
 </html>
