@@ -41,7 +41,7 @@
             webCamSource.setAttribute('position', '0 0 -50');
             webCamSource.setAttribute('scale', '54 36 1');
             camera.insertBefore(webCamSource, camera.firstChild);
-            document.querySelector('.a-enter-vr-button').addEventListener('clik', () => {
+            document.querySelector('.a-enter-vr-button').addEventListener('click', () => {
                 camera.object3D.position.set(0, 0, 0)
             })
         }, 2000);
