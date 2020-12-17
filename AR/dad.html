@@ -14,24 +14,24 @@
 
 <body style="margin: 0; overflow: hidden;">
 
-
     <a-scene 
         vr-mode-ui="enabled: false;" 
         renderer="logarithmicDepthBuffer: true;" 
         embedded arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
 
         <a-nft
-        type="nft"
-        url="assets/bearBlueShirt.jpg"
-        smooth="true"
-        smoothCount="10"
-        smoothTolerance=".01"
-        smoothThreshold="5">
+            type="nft"
+            url="assets/bearBlueShirt.jpg"
+            smooth="true"
+            smoothCount="10"
+            smoothTolerance=".01"
+            smoothThreshold="5">
 
             <a-entity 
                 geometry="primitive:box;" 
                 material="shader:gif;src:url(hereComeDat.gif);color:green;opacity:.8">
-            </a-entity>        
+            </a-entity>      
+
         </a-nft>
 
         <a-entity camera></a-entity>
