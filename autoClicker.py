@@ -3,7 +3,7 @@ from pynput.keyboard import *
 import random
 
 #  ======== settings ========
-delay = random.randint(1, 3)  # in seconds
+delay = random.randint(1, 2)  # in seconds
 resume_key = Key.f1
 pause_key = Key.f2
 exit_key = Key.esc
@@ -47,6 +47,7 @@ def main():
 
     display_controls()
     while running:
+        delay = random.randint(1, 3)  # in seconds
         if not pause and i < noOfClicks:
 
             pyautogui.click(pyautogui.position())
