@@ -47,7 +47,7 @@ def main():
 
     display_controls()
     while running:
-        delay = random.randint(1, 3)  # in seconds
+        delay = random.randint(1, 2)  # in seconds
         if not pause and i < noOfClicks:
 
             pyautogui.click(pyautogui.position())
