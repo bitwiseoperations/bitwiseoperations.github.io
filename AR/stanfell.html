@@ -18,17 +18,47 @@
     arjs="sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960;">
 
 
-        <a-cursor></a-cursor>
+    <a-entity 
+    rotation="0 0 0" 
+    animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
+    gps-entity-place = "latitude: 52.61153225730126; longitude: -1.1227184308423996"> 
+        <a-dodecahedron 
+            color="#FF926B" 
+            radius="5">
+        </a-dodecahedron>
+    </a-entity>
 
-        <a-entity 
-        rotation="0 0 0" 
-        animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
-        gps-entity-place = "latitude: 52.611536329001105; longitude: -1.1227063609019592">
-            <a-sphere 
-                position="5 0 0" 
-                color="mediumseagreen">
-            </a-sphere>
-        </a-entity>
+    <a-entity 
+    rotation="0 0 0" 
+    animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
+    gps-entity-place = "latitude: 52.61152085653968; longitude: -1.1226916087525314">
+        <a-torus 
+            color="#43A367" 
+            arc="270" 
+            radius="5" 
+            radius-tubular="0.1">
+        </a-torus>
+    </a-entity>        
+
+    <a-entity 
+    rotation="0 0 0" 
+    animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
+    gps-entity-place = "latitude: 52.611536329001105; longitude: -1.1227063609019592">
+        <a-sphere 
+            position="5 0 0" 
+            color="mediumseagreen">
+        </a-sphere>
+    </a-entity>        
+
+    <a-entity 
+    rotation="0 0 0" 
+    animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
+    gps-entity-place = "latitude: 52.611536329001105; longitude: -1.1227063609019592">
+        <a-icosahedron 
+            color="#FF926B" 
+            radius="5">
+        </a-icosahedron>
+    </a-entity>
 
         <a-camera gps-camera = "maxDistance: 5;" rotation-reader> </a-camera>
     </a-scene>
